@@ -20,7 +20,7 @@ export default class Cashier {
 
       lines.push('\n');
 
-      lines.push(`${product.name} ${product.brand} ${product.color || product.model || ''}`);
+      lines.push(product.getProductDetails());
 
       lines.push(`${quantity} x $${product.price} = $${cartItemTotalPrice.toFixed(2)}`);
 

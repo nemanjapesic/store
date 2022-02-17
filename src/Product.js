@@ -4,4 +4,8 @@ export default class Product {
     this.brand = brand;
     this.price = price;
   }
+
+  getProductDetails() {
+    return `${this.name} ${this.brand}`;
+  }
 }
